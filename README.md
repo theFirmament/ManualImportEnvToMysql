@@ -36,8 +36,5 @@ docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < school_env.sql
 docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < class_env.sql
 ```
 
-
-
-
-
-
+## 三.python3语言实现终端输入学校部署环境变量存入数据库
+详阅envToSql.py           
