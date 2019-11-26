@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS `school_env`;
 CREATE TABLE IF NOT EXISTS `school_env` (
     `id` tinyint PRIMARY KEY NOT NULL auto_increment COMMENT "序号",
+    `school_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT "学校名称",
     `frpc_remote_port` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT "远程连接端口",
     `campus_env` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT "学校部署环境",
     `school_ip` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT "学校代理服务器IP",
