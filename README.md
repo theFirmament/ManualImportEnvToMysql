@@ -44,3 +44,5 @@ docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < class_env.sql
 ```angular2
 pip3 install -r requirements.txt
 ```
+
+## 其它功能待后续进一步开发
