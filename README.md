@@ -41,3 +41,7 @@ docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < class_env.sql
 
 ## 四.增加第三方库的文件
 详阅requirements.txt
+如若拷贝到其它地方，只需输入如下命令，即可一键安装项目所需要的第三方库
+```angular2
+pip3 install -r requirements.txt
+```
