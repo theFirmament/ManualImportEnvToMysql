@@ -23,7 +23,8 @@ docker run -d \
   -e MYSQL_USER="ang" \
   -e MYSQL_PASSWORD="ong" \
   -e MYSQL_DATABASE="campusenv" \
-  mysql:5.7
+  mysql:5.7 \
+  --lower-case-table-names=1
 ```
 
 ## 二.创建存放部署变量的表
