@@ -18,17 +18,12 @@ docker run -d \
   -v /etc/localtime:/etc/localtime:ro \
   -v /data/etc/timezone:/etc/timezone:ro \
   -v /lqxMysql:/var/lib/mysql:Z \
+  -v /data/config/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf:Z \
   -e MYSQL_ROOT_PASSWORD="lqx20191125" \
-  -e MYSQL_USER="cang" \
-  -e MYSQL_PASSWORD="qiong" \
-  -e MYSQL_DATABASES="campusEnv" \
-  mysql:5.7 \
-  --character-set-client=utf8mb4 \
-  --character-set-connection=utf8mb4 \
-  --character-set-results=utf8mb4 \
-  --character-set-server=utf8mb4 \
-  --collation-server=utf8mb4_unicode_ci \
-  --lower-case-table-names=1
+  -e MYSQL_USER="ang" \
+  -e MYSQL_PASSWORD="ong" \
+  -e MYSQL_DATABASE="campusenv" \
+  mysql:5.7
 ```
 
 ## 二.创建存放部署变量的表
