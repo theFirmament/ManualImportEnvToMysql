@@ -23,6 +23,9 @@ docker run -d \
   -e MYSQL_PASSWORD="qiong" \
   -e MYSQL_DATABASES="campusEnv" \
   mysql:5.7 \
+  --character-set-client=utf8mb4 \
+  --character-set-connection=utf8mb4 \
+  --character-set-results=utf8mb4 \
   --character-set-server=utf8mb4 \
   --collation-server=utf8mb4_unicode_ci \
   --lower-case-table-names=1
