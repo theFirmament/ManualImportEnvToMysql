@@ -31,8 +31,8 @@ docker run -d \
 详见文件夹sqlFile        
 向数据库导入表结构       
 ```
-docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < school_env.sql
-docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < class_env.sql
+docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < envSchool.sql
+docker exec -i lqxMysql mysql -uroot -plqx20191125 -DcampusEnv < envclass.sql
 ```
 
 ## 三.python3语言实现终端输入学校部署环境变量存入数据库
